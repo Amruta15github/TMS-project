@@ -9,27 +9,27 @@
       <!-- Slide 1 -->
       <div class="carousel-item active">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Moderna</span></h2>
-          <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-          <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+          <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Tutor Management System</span></h2>
+          <p class="animate__animated animate__fadeInUp">A tutor management system's main function is to manage the students and tutors on the platform. The students should easily be able to find the teachers and courses they are looking for. They should be able to effortlessly book a tutor and start their learning journey on the platform.</p>
+          <a href="aboutus.aspx" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
         </div>
       </div>
 
       <!-- Slide 2 -->
       <div class="carousel-item">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-          <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-          <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+          <h2 class="animate__animated animate__fadeInDown">Student And Tutor Management</h2>
+          <p class="animate__animated animate__fadeInUp">A tutor management system’s main function is to manage the students and tutors on the platform. The students should easily be able to find the teachers and courses they are looking for. They should be able to effortlessly book a tutor and start their learning journey on the platform. On the other hand, a dependable tutor management system should help tutors in managing their schedules and conducting classes</p>
+          <a href="aboutus.aspx" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
         </div>
       </div>
 
       <!-- Slide 3 -->
       <div class="carousel-item">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-          <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-          <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+          <h2 class="animate__animated animate__fadeInDown">Student and Tutor</h2>
+          <p class="animate__animated animate__fadeInUp">A tutor management system’s main function is to manage the students and tutors on the platform. The students should easily be able to find the teachers and courses they are looking for. They should be able to effortlessly book a tutor and start their learning journey on the platform.</p>
+          <a href="aboutus.aspx" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
         </div>
       </div>
 
@@ -95,7 +95,7 @@
         <div class="row">
           <div class="col-lg-6 video-box">
             <img src="assets/img/why-us.jpg" class="img-fluid" alt="">
-            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+            <a href="https://youtu.be/ZDAdi6ZLktc" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
           </div>
 
           <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
@@ -124,7 +124,7 @@
 
         <div class="section-title">
           <h2>Features</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Better management, Saves valuable time, Lessens administrative errors, Get useful data and statistics, A tutor management system’s main function is to manage the students and tutors on the platform. The students should easily be able to find the teachers and courses they are looking for. They should be able to effortlessly book a tutor and start their learning journey on the platform. </p>
         </div>
 
         <div class="row" data-aos="fade-up">
@@ -132,14 +132,13 @@
             <img src="assets/img/features-1.svg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 pt-4">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <h3>Notifications And Alerts</h3>
             <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+             A powerful tutor management system allows seamless communication and information exchange between admin, tutors, and students.
             </p>
             <ul>
-              <li><i class="icofont-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="icofont-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="icofont-check"></i> Better management</li>
+              <li><i class="icofont-check"></i> Saves valuable time</li>
             </ul>
           </div>
         </div>
@@ -149,15 +148,12 @@
             <img src="assets/img/features-2.svg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 pt-5 order-2 order-md-1">
-            <h3>Corporis temporibus maiores provident</h3>
+            <h3>Email Add-On </h3>
             <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+            
             </p>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
+             An easy way to stay in contact with your clients is by using the email add-on. With this feature, you can customize your email templates with color and images, and send to multiple recipients at once. 
             </p>
           </div>
         </div>
@@ -167,36 +163,21 @@
             <img src="assets/img/features-3.svg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 pt-5">
-            <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
-            <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
+            <h3>Saves valuable time </h3>
+            <p> Although mundane, the traditionally manual tasks like scheduling and invoicing are the backbone of tutoring, and must be accomplished regardless if they’re time-consuming or not.</p>
             <ul>
-              <li><i class="icofont-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="icofont-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="icofont-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
+              <li><i class="icofont-check"></i> Better management.</li>
+              <li><i class="icofont-check"></i> Get useful data and statistics.</li>
+              <li><i class="icofont-check"></i> Reach your audience beyond geographical barriers.</li>
             </ul>
           </div>
         </div>
 
-        <div class="row" data-aos="fade-up">
-          <div class="col-md-5 order-1 order-md-2">
-            <img src="assets/img/features-4.svg" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7 pt-5 order-2 order-md-1">
-            <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
-            <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
-          </div>
-        </div>
+     
 
       </div>
-    </section><!-- End Features Section -->
+    </section>
+    <!-- End Features Section -->
 
 
 </asp:Content>
