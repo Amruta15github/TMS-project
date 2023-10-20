@@ -155,12 +155,18 @@
         </div>  
          <div class="row">
              <div class="col-md-4 mx-auto">
-                 <asp:Button ID="btnregister" runat="server" Text="Register" CssClass="btn btn-info btn-block" OnClick="btnregister_Click" />
+                 <asp:Button ID="btnregister" runat="server" Text="Register" CssClass="btn btn-primary btn-block" OnClick="btnregister_Click" />
              </div>
 
          </div>  
         <br />
-                    
+                <div class="row">
+             <div class="col-md-6 mx-auto text-center">
+             <a href="stud_register.aspx" class="btn btn-info">Register as student</a>
+             <a href="tutor_register.aspx" class="btn btn-success">Register as tutor</a>
+             </div>
+                 </div>
+                 <br />    
         </div>
    
     <br />
