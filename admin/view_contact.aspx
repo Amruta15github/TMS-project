@@ -1,4 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/admin/admin_dashboard.master" AutoEventWireup="true" CodeFile="view_contact.aspx.cs" Inherits="admin_view_contact" %>
+﻿<%@ Page Title="viewcontact | TMS" Language="C#" MasterPageFile="~/admin/admin_dashboard.master" AutoEventWireup="true" CodeFile="view_contact.aspx.cs" Inherits="admin_view_contact" %>
+
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -23,10 +24,7 @@
 				<RowStyle CssClass="" />
 				<AlternatingRowStyle CssClass="alt" />
 				<Columns>
-			       <%-- <asp:BoundField DataField="id">
-						<HeaderStyle CssClass="HideCol" />
-						<ItemStyle  CssClass="HideCol"/>
-					</asp:BoundField>--%>
+			      
 
 					<asp:BoundField DataField="id">
 						<HeaderStyle CssClass="HideCol" />
