@@ -112,22 +112,23 @@ public partial class admin_viewstudents : System.Web.UI.Page
                 {
                     DataRow row = dtplac.Rows[0];
                     lblId.Text = placIdx.ToString();
-
                     txtstudname.Text = row["name"].ToString();
                     txtstudfname.Text = row["fname"].ToString();
                     txtstudaname.Text = row["surname"].ToString();
+                    ddlgender.SelectedValue = row["gender"].ToString();
                     txtage.Text = row["age"].ToString();
+                    ddlcountry.SelectedValue = row["country"].ToString();
                     txtcity.Text = row["city"].ToString();
                     txtaddress.Text = row["address"].ToString();
                     txtstandard.Text = row["standard"].ToString();
+                    ddlgoingto.SelectedValue = row["goingto"].ToString();
                     txtsub.Text = row["subject"].ToString();
                     txtcontact.Text = row["contactno"].ToString();
+                    ddltutiontype.SelectedValue = row["tutiontype"].ToString();
+                    ddltutionprefer.SelectedValue = row["tutorperfer"].ToString();
                     txtusername.Text = row["username"].ToString();
                     txtpass.Text = row["password"].ToString();
                   
-
-
-
                 }
             }
         }

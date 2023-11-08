@@ -57,7 +57,7 @@
 
 					 <div class="form-group col-md-6">
                         <label for="exampleFormControlSelect2" class="fontRegular semiBold clrBlack">Select Marital Status: *</label>
-                        <asp:DropDownList ID="ddlmaterial" CssClass="form-control" runat="server">
+                        <asp:DropDownList ID="ddlmarital" CssClass="form-control" runat="server">
                             <asp:ListItem Value="0"><-Marital Status-></asp:ListItem>
                             <asp:ListItem>Single</asp:ListItem>
                             <asp:ListItem>Married</asp:ListItem>

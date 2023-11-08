@@ -129,7 +129,7 @@
                     </div>
 					<div class="form-group col-md-6">
                         <label for="exampleFormControlSelect2" class="fontRegular semiBold clrBlack">Select Tution prefer: *</label>
-                        <asp:DropDownList ID="DropDownList2" CssClass="form-control" runat="server">
+                        <asp:DropDownList ID="ddltutionprefer" CssClass="form-control" runat="server">
                             <asp:ListItem Value="0"><-Select Tution prefer-></asp:ListItem>
                             <asp:ListItem>Graduate</asp:ListItem>
                             <asp:ListItem>Masters</asp:ListItem>
