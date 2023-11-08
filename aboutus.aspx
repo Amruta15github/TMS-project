@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/TMS.master" AutoEventWireup="true" CodeFile="aboutus.aspx.cs" Inherits="aboutus" %>
+﻿<%@ Page Title="AboutUs| TMS" Language="C#" MasterPageFile="~/TMS.master" AutoEventWireup="true" CodeFile="aboutus.aspx.cs" Inherits="aboutus" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -95,19 +95,19 @@
 
           <div class="progress">
             <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">HTML <i class="val">100%</i></span>
+              <span class="skill">ASP.NET <i class="val">100%</i></span>
             </div>
           </div>
 
           <div class="progress">
             <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">CSS <i class="val">90%</i></span>
+              <span class="skill">HTML/CSS <i class="val">90%</i></span>
             </div>
           </div>
 
           <div class="progress">
             <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">JavaScript <i class="val">75%</i></span>
+              <span class="skill">SOL server<i class="val">85%</i></span>
             </div>
           </div>
 

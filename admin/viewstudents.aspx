@@ -1,7 +1,16 @@
 ﻿<%@ Page Title="viewstudent | TMS" Language="C#" MasterPageFile="~/admin/admin_dashboard.master" AutoEventWireup="true" CodeFile="viewstudents.aspx.cs" Inherits="admin_viewstudents" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-	 
+	  <script>
+		$(document).ready(function () {
+			$('[id$=gvviewstud]').DataTable({
+				columnDefs: [
+					{ orderable: false, targets: [0, 1, 2, 3, 4, 5 ] }
+				],
+				order: [[0, 'desc']]
+			});
+		});
+      </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <br />
@@ -147,6 +156,7 @@
         </div>
 		 <!-- Button controls starts -->
 		<span class="space10"></span>
+		 <br />
 		
 		
 		<asp:Button ID="btnSave" runat="server" CssClass="btn btn-primary" Text="Save" OnClick="btnSave_Click"  />
@@ -158,7 +168,7 @@
 
        <div id="viewinfo" runat="server">
 		<a href="viewstudents.aspx?action=new" runat="server" class="btn btn-primary btn-md">Add New</a>	
-		  
+		  <br />
 		<span class="space20"></span>
 		<div class="formPanel table-responsive-md">
 			<asp:GridView ID="gvviewstud" runat="server"  CssClass="table table-striped table-bordered table-hover" GridLines="None"
@@ -167,10 +177,10 @@
 				<RowStyle CssClass="" />
 				<AlternatingRowStyle CssClass="alt" />
 			<Columns>
-					 <asp:BoundField DataField="id">
+					<%-- <asp:BoundField DataField="id">
 						<HeaderStyle CssClass="HideCol" />
 						<ItemStyle  CssClass="HideCol"/>
-					</asp:BoundField>
+					</asp:BoundField>--%>
 
 					 <asp:BoundField DataField="name" HeaderText="Name">
 						<ItemStyle Width="10%" />

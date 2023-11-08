@@ -56,7 +56,7 @@
           <%--<li><a href="portfilio.aspx">Portfolio</a></li>
           <li><a href="team.aspx">Team</a></li>--%>
           <li><a href="blog.aspx">Blog</a></li>
-          <li class="drop-down"><a href="">Drop Down</a>
+          <li class="drop-down"><a href="#">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="drop-down"><a href="#">Drop Down 2</a>
@@ -116,7 +116,7 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Default.aspx">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="aboutus.aspx">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="services.aspx">Services</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>

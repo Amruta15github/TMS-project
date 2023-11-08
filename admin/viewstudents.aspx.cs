@@ -153,7 +153,7 @@ public partial class admin_viewstudents : System.Web.UI.Page
         catch (Exception ex)
         {
             ScriptManager.RegisterClientScriptBlock(this, GetType(), "myScript", "TostTrigger('error', 'Error Occoured While Processing');", true);
-            c.ErrorLogHandler(this.ToString(), "gvstudplacement_RowDataBound", ex.Message.ToString());
+            c.ErrorLogHandler(this.ToString(), " gvviewstud_RowDataBound", ex.Message.ToString());
             return;
         }
     }
