@@ -20,7 +20,7 @@
 
             <div class="input-group">
                
-                <asp:TextBox ID="txtsearch" runat="server" class="from-control" placeholder="search tutor" ></asp:TextBox>
+                <asp:TextBox ID="txtsearch" runat="server" class="from-control" placeholder="search students" ></asp:TextBox>
                 <div class="input-group-append">
                     <button id="btnsearch" runat="server" class ="btn btn-secondary" type="button" onserverclick="btnsearch_ServerClick">
                         <i class=" fa fa-search"></i>

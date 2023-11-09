@@ -51,7 +51,7 @@
 					</div>
                     <div class="form-group col-md-6">
                         <label>Student Surname Name:*</label>
-                        <asp:TextBox ID="txtstudaname" runat="server" CssClass="form-control" Width="100%"
+                        <asp:TextBox ID="txtsurname" runat="server" CssClass="form-control" Width="100%"
                             MaxLength="50"></asp:TextBox>
                     </div>
                     <div class="form-group col-md-6">

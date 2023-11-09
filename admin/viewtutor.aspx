@@ -149,7 +149,7 @@
 	</div>
 
        <div id="viewinfo" runat="server">
-		<a href="viewstudents.aspx?action=new" runat="server" class="btn btn-primary btn-md">Add New</a>	
+		<a href="viewtutor.aspx?action=new" runat="server" class="btn btn-primary btn-md">Add New</a>	
 		  <br />
 		<span class="space20"></span>
 		<div class="formPanel table-responsive-md">

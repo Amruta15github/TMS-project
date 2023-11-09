@@ -114,7 +114,7 @@ public partial class admin_viewstudents : System.Web.UI.Page
                     lblId.Text = placIdx.ToString();
                     txtstudname.Text = row["name"].ToString();
                     txtstudfname.Text = row["fname"].ToString();
-                    txtstudaname.Text = row["surname"].ToString();
+                    txtsurname.Text = row["surname"].ToString();
                     ddlgender.SelectedValue = row["gender"].ToString();
                     txtage.Text = row["age"].ToString();
                     ddlcountry.SelectedValue = row["country"].ToString();
@@ -161,7 +161,43 @@ public partial class admin_viewstudents : System.Web.UI.Page
 
     protected void btnSave_Click(object sender, EventArgs e)
     {
+        try
+        {
+            GetAllControls(this.Controls);
+            //Empty Validations
+            if (txtstudname.Text == "" || txtstudfname.Text == "" || txtsurname.Text == "" || txtage.Text == "" || txtcity.Text == "" || txtaddress.Text == "" || txtstandard.Text =="" || txtsub.Text =="" || txtcontact.Text==""|| txtusername.Text==""|| txtpass.Text=="")
+            {
+                //ScriptManager.RegisterClientScriptBlock(this, GetType(), "myScript", "TostTrigger('warning', 'All * Fields are mandatory');", true);
+                Response.Write("<script>alert('All * Fields are mandatory');</script>");
+                return;
+            }
 
+           
+            //Insert Update data
+            int maxId = lblId.Text == "[New]" ? c.NextId("StudentPlacement", "StudPlcId") : Convert.ToInt32(lblId.Text);
+
+            if (lblId.Text == "[New]")
+            {
+                c.ExecuteQuery("Insert into stud_register (id, name, fname, surname, gender, age, country, city, address, standard, goingto,subject,contactno,tutiontype,tutorperfer,username,password) Values (" + maxId + ",  '" + txtstudname + "', '" + txtstudfname.Text + "', '" + txtsurname.Text + "'," + ddlgender.SelectedItem.Text + ",'" + txtage.Text + "'," + ddlcountry.SelectedItem.Text + ",'" + txtcity.Text + "','" + txtaddress.Text + "','" + txtstandard.Text + "'," + ddlgoingto.SelectedItem.Text + ",'" + txtsub.Text + "','" + txtcontact.Text + "'," + ddltutiontype.SelectedItem.Text + "," + ddltutionprefer.SelectedItem.Text + ",'" + txtusername.Text + "','" + txtpass.Text + "')");
+
+                Response.Write("<script>alert('Record Added ');</script>");
+            }
+            else
+            {
+                c.ExecuteQuery("Update  stud_register  set id=" + maxId + ", name = '" + txtstudname + "', fname='" + txtstudfname.Text + "', surname='" + txtsurname.Text + "', gender=" + ddlgender.SelectedItem.Text + ", age= '" + txtage.Text + "', country= " + ddlcountry.SelectedItem.Text + ", city= '" + txtcity.Text + "', address='" + txtaddress.Text + "',standard='"+ txtstandard .Text+ "',goingto=" + ddlgoingto.SelectedItem.Text + ",subject='" + txtsub.Text + "',contactno='" + txtcontact.Text + "',tutiontype=" + ddltutiontype.SelectedItem.Text + ",tutorperfer=" + ddltutionprefer.SelectedItem.Text + ",username='" + txtusername.Text + "',password='" + txtpass.Text + "' where id=" + maxId);
+
+                Response.Write("<script>alert('Record Updated ');</script>");
+            }
+
+            //ScriptManager.RegisterClientScriptBlock(this, GetType(), "CallMyFunction", "waitAndMove('jobopenings-master.aspx', 2000);", true);
+            Response.Redirect("viewstudents.aspx");
+        }
+        catch (Exception ex)
+        {
+            ScriptManager.RegisterClientScriptBlock(this, GetType(), "myScript", "TostTrigger('error', 'Error Occoured While Processing');", true);
+            c.ErrorLogHandler(this.ToString(), "btnSave_Click", ex.Message.ToString());
+            return;
+        }
     }
 
     protected void btnDelete_Click(object sender, EventArgs e)
@@ -170,7 +206,8 @@ public partial class admin_viewstudents : System.Web.UI.Page
         {
             c.ExecuteQuery("Delete stud_register where id=" + Request.QueryString["id"]);
             ScriptManager.RegisterClientScriptBlock(this, GetType(), "myScript", "TostTrigger('success', 'Record Deleted');", true);
-            ScriptManager.RegisterClientScriptBlock(this, GetType(), "CallMyFunction", "waitAndMove('viewstudents.aspx', 2000);", true);
+            //ScriptManager.RegisterClientScriptBlock(this, GetType(), "CallMyFunction", "waitAndMove('viewstudents.aspx', 2000);", true);
+            Response.Redirect("viewstudents.aspx");
         }
         catch (Exception ex)
         {

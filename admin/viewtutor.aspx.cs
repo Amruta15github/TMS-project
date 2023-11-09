@@ -105,6 +105,22 @@ public partial class admin_viewtutor : System.Web.UI.Page
         }
     }
 
+    public void GetAllControls(ControlCollection ctrs)
+    {
+        foreach (Control c in ctrs)
+        {
+            if (c is System.Web.UI.WebControls.TextBox)
+            {
+                TextBox tt = c as TextBox;
+                tt.Text = tt.Text.Trim().Replace("'", "");
+            }
+            if (c.HasControls())
+            {
+                GetAllControls(c.Controls);
+            }
+        }
+    }
+
     public void GetData(int placIdx)
     {
         try
@@ -143,7 +159,43 @@ public partial class admin_viewtutor : System.Web.UI.Page
 
     protected void btnSave_Click(object sender, EventArgs e)
     {
+        try
+        {
+            GetAllControls(this.Controls);
+            //Empty Validations
+            if (txttutorname.Text == "" || txttutorsurname.Text == "" || txtage.Text == "" || txtage.Text == "" || txtcity.Text == "" || txtaddress.Text == "" || txtcontact.Text == "" || txtusername.Text == "" || txtpass.Text == "")
+            {
+                //ScriptManager.RegisterClientScriptBlock(this, GetType(), "myScript", "TostTrigger('warning', 'All * Fields are mandatory');", true);
+                Response.Write("<script>alert('All * Fields are mandatory');</script>");
+                return;
+            }
 
+
+            //Insert Update data
+            int maxId = lblId.Text == "[New]" ? c.NextId("StudentPlacement", "StudPlcId") : Convert.ToInt32(lblId.Text);
+
+            if (lblId.Text == "[New]")
+            {
+                c.ExecuteQuery("Insert into tutor_register (id, name, surname, gender,age,email, marital_status,country, city, address, qualification, experience, contactno, username,password) Values (" + maxId + ",  '" + txttutorname + "', '" + txttutorsurname.Text + "'," + ddlgender.SelectedItem.Text + ",'" + txtage.Text + "'," + ddlmarital.SelectedItem.Text + "," + ddlcountry.SelectedItem.Text + ",'" + txtcity.Text + "','" + txtaddress.Text + "'," + ddlqualification.SelectedItem.Text + "," + ddlexp.SelectedItem.Text + ",'" + txtcontact.Text + "','" + txtusername.Text + "','" + txtpass.Text + "')");
+
+                Response.Write("<script>alert('Record Added ');</script>");
+            }
+            else
+            {
+                c.ExecuteQuery("Update  stud_register  set id=" + maxId + ", name = '" + txttutorname + "', fname='" + txttutorsurname.Text + "', gender=" + ddlgender.SelectedItem.Text + ", age= '" + txtage.Text + "',marital_status=" + ddlmarital.SelectedItem.Text + ", country= " + ddlcountry.SelectedItem.Text + ", city= '" + txtcity.Text + "', address='" + txtaddress.Text + "', qualification=" + ddlqualification.SelectedItem.Text + ", experience=" + ddlexp.SelectedItem.Text + ",contactno='" + txtcontact.Text + "',username='" + txtusername.Text + "',password='" + txtpass.Text + "' where id=" + maxId);
+
+                Response.Write("<script>alert('Record Updated ');</script>");
+            }
+
+            //ScriptManager.RegisterClientScriptBlock(this, GetType(), "CallMyFunction", "waitAndMove('jobopenings-master.aspx', 2000);", true);
+            Response.Redirect("viewtutor.aspx");
+        }
+        catch (Exception ex)
+        {
+            ScriptManager.RegisterClientScriptBlock(this, GetType(), "myScript", "TostTrigger('error', 'Error Occoured While Processing');", true);
+            c.ErrorLogHandler(this.ToString(), "btnSave_Click", ex.Message.ToString());
+            return;
+        }
     }
 
     protected void btnDelete_Click(object sender, EventArgs e)
@@ -152,7 +204,8 @@ public partial class admin_viewtutor : System.Web.UI.Page
         {
             c.ExecuteQuery("Delete tutor_register where id=" + Request.QueryString["id"]);
             ScriptManager.RegisterClientScriptBlock(this, GetType(), "myScript", "TostTrigger('success', 'Record Deleted');", true);
-            ScriptManager.RegisterClientScriptBlock(this, GetType(), "CallMyFunction", "waitAndMove('viewtutor.aspx', 2000);", true);
+            // ScriptManager.RegisterClientScriptBlock(this, GetType(), "CallMyFunction", "waitAndMove('viewtutor.aspx', 2000);", true);
+            Response.Redirect("viewtutor.aspx");
         }
         catch (Exception ex)
         {

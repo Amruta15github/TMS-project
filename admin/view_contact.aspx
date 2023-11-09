@@ -26,10 +26,10 @@
 				<Columns>
 			      
 
-					<asp:BoundField DataField="id">
+					<%--<asp:BoundField DataField="id">
 						<HeaderStyle CssClass="HideCol" />
 						<ItemStyle  CssClass="HideCol"/>
-					</asp:BoundField>
+					</asp:BoundField>--%>
 					
 					 <asp:BoundField DataField="name" HeaderText="Name">
 						<ItemStyle Width="20%" />
