@@ -146,7 +146,8 @@ h1,h2,h3,h4,h5,h6{font-weight:normal}
 .HideCol{ display:none}
 .gView { text-decoration: none; background:url(../images/icons/view-ico.png) no-repeat center center; display:block; height:24px; width:24px}
 .gReply { text-decoration: none; background:url(../images/icons/replyIcon.png) no-repeat center center; display:block; height:24px; width:24px}
-.gAnch { text-decoration: none; background:url(../assets/img/edit.png) no-repeat center center; display:block; height:24px; width:24px}
+.gAnch {text-decoration: none;background: url(../images/icons/edit.png) no-repeat center center;display: block;height: 24px;width: 24px
+}
 .addPhoto { text-decoration: none; background:url(../images/icons/addPhoto.png) no-repeat center center; display:block; height:24px; width:24px}
 .gCareer { text-decoration: none; background:url(../images/icons/resume_blk.png) no-repeat center center; display:block; height:24px; width:24px}
 .gDel{text-decoration: none; background:url(../images/icons/delete.png) no-repeat center center; display:block; height:24px; width:24px}
